@@ -63,7 +63,7 @@ Mat create_dictionary(const string file_list) {
 		}
 
 		//all images are resized
-		resize(image, image, Size(256, 256));
+		resize(image, image, Size(200, 200));
 		std::cout << "(" << i+1 << "/" << imglist.size() << ")Processing: " << imglist[i] << std::endl;
 		imshow(WIN_NAME, image);
 		//waitKey(10);
